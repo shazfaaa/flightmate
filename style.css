@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #3d5cb8;
+  --primary-color-dark: #334c99;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --extra-light: #f1f5f9;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--text-dark);
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.nav__logo2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+  }
+
+  .nav__logo3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+  }
+
+  .nav-ticket{
+    max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  }
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  font-weight: 500;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--text-dark);
+}
+
+.header__container .section__header {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+/* Header Section */
+header.section__container {
+    text-align: center; /* Center content */
+    padding: 40px 20px; /* Spacing */
+    background-color: white; /* Set background color to white */
+}
+
+header {
+    background-color: white; /* Ensure header background is white */
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* Header Image Styling */
+header img {
+    width: 100%; /* Ensure image fills container width */
+    max-height: 400px; /* Set max height for image */
+    object-fit: cover; /* Ensure image is not distorted */
+
+    margin-top: 20px; /* Spacing from top */
+}
+
+@media (max-width: 768px) {
+    header img {
+        max-height: 250px; /* Reduce image height on small screens */
+        border-radius: 10px; /* Slightly reduce rounded corners */
+    }
+}
+
+/* Form Section */
+.form-section {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 1, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 98%;
+    width: 98%;
+}
+
+.form-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form-control {
+    border-radius: 5px;
+    max-width: 95%;
+    width: 95%;
+}
+
+input.form-control {
+    width: 100%; /* Buat input menyesuaikan dengan lebar container */
+    max-width: 100%; /* Pastikan tidak ada pembatas */
+    box-sizing: border-box; /* Pastikan padding dihitung dalam lebar */
+}
+
+.col-md-6 {
+    flex: 0 0 95%; /* Atur lebar kolom menjadi penuh */
+}
+
+
+.btn {
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Ticket Cards */
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #007bff;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.container h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+/*passenger details*/
+.container_passenger {
+    max-width: 800px;  
+    margin: 20px auto;  /* tambahkan 'auto' untuk center horizontally */
+    background: #ffffff;
+    padding: 40px;    
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: black;
+    margin-bottom: 30px;    /* tambah margin bottom */
+    text-align: center;
+    font-size: 24px;        /* tambah font size */
+}
+
+
+
+.section_passenger {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;  /* tambah margin bottom */
+    margin-right: 0;      /* hapus margin right */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;   /* tambah margin bottom */
+    color: #34495e;
+    font-weight: 500;     /* kurangi weight */
+    font-size: 16px;      /* tambah font size */
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;        /* tambah padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;  /* tambah box-sizing */
+}
+
+/* Tambahkan ini untuk date input */
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Tambahkan ini untuk select */
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    appearance: none;      /* hapus default styling */
+    background: #fff;
+}
+
+.info-box {
+    background: #f5f7fa;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    color: #34495e;
+    margin: 15px;
+}
+
+.info-box.warning {
+    border-left-color: #e67e22;
+}
+
+.addons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.addon {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addon h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.addon p {
+    margin: 0;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.addon button {
+    margin-top: 10px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addon button:hover {
+    background: #2980b9;
+}
+
+.total-cost-box {
+    background: #f5f5f5;
+    border: 2px solid #e74c3c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total-cost-box .total-cost {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.actions_passenger {
+    text-align: right;
+}
+
+.actions_passenger a {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.actions_passenger button:hover {
+    background: #555;
+}
+
+/*Confirmation*/
+
+.kelas-confirmation-container {
+    width:97%;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+    padding: 20px;
+    margin: 20px;
+}
+.kelas-confirmation-container h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.kelas-confirmation-detail {
+    margin-bottom: 15px;
+}
+.kelas-confirmation-detail label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+.kelas-confirmation-detail span {
+    display: block;
+    color: #333333;
+}
+.kelas-confirmation-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.kelas-confirmation-button-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.kelas-confirmation-button-container button:hover {
+    background-color: #45a049;
+}
+
+.alert {
+    max-width: 100%;
+    width: 97%;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #d4edda;
+    background-color: #d4edda;
+    color: #155724;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.alert h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.alert-success {
+    border-color: #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Button Back to Home */
+.btn-primary {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 25px;
+    }
+
+    .nav__links .link a {
+        font-size: 0.9rem;
+    }
+
+    .form-section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+.footer {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: 5rem;
+  }
+  
+  .footer__col h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  
+  .footer__col h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  
+  .footer__col p {
+    color: var(--extra-light);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .footer__col p:hover {
+    color: var(--white);
+  }
+  
+  .footer__bar {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid var(--extra-light);
+  }
+  
+  .footer__bar p {
+    font-size: 0.9rem;
+    color: var(--extra-light);
+  }
+  
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .socials span {
+    font-size: 1.2rem;
+    color: var(--extra-light);
+  }
+
+  /*AeroPal*/
+  #chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 130px); /* Penyesuaian agar input tetap terlihat */
+}
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+.user {
+    background-color: #0077cc;
+    color: white;
+    align-self: flex-end;
+}
+.ai {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+#input-container {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    position: sticky;
+    bottom: 0; /* Tetap di bawah halaman */
+}
+#input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#input-container button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#input-container button:hover {
+    background-color: #005fa3;
+}
